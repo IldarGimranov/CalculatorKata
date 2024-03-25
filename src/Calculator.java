@@ -1,5 +1,4 @@
 import java.io.IOException;
-import java.lang.reflect.Array;
 import java.util.*;
 
 public class Calculator {
@@ -15,7 +14,6 @@ public class Calculator {
         if (dlinaMassiva!=3){
             throw new IOException("Ошибка ввода");
         }
-        int resultRoman=0;
         String a0 = a[0], a1 = a[1], a2 = a[2];
         char simvol1 = a0.charAt(0);
         char simvol2 = a2.charAt(0);
@@ -41,7 +39,6 @@ public class Calculator {
                     throw new IOException("В римской системе нет отрицательных чисел");
                 }
                 result1 = roman[result];
-                //System.out.println(roman[result]);
             }
         }else {throw new IOException("Ошика ввода");}
         return result1;
